@@ -61,8 +61,15 @@ void push(ArrayList * l, void * data, int i)
 
 void *pop(ArrayList * l, int i)
 {
-  
-    return NULL;
+  if(i < 0) i = i + l -> size;
+
+  void *aux = l -> data[i];
+
+  for (auxIn = i ; auxIn < l -> size ; auxIn++)
+  {
+      l -> data[auxIn] = l -> data[auxIn+1];
+  }
+    return *aux;
 }
 
 void *get(ArrayList * l, int i)

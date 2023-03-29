@@ -169,3 +169,23 @@ Wed 29 Mar 2023 02:29:21 PM UTC:
  tests:  9|1
 total_score: 50/70
 0a5e0c8
+Wed 29 Mar 2023 02:40:22 PM UTC: 
+ arraylist.c | 9 ++++++++-
+ 1 file changed, 8 insertions(+), 1 deletion(-)
+In file included from test.c:5:
+arraylist.c: In function ‘pop’:
+arraylist.c:68:8: error: ‘auxIn’ undeclared (first use in this function); did you mean ‘aux’?
+   68 |   for (auxIn = i ; auxIn < l -> size ; auxIn++)
+      |        ^~~~~
+      |        aux
+arraylist.c:68:8: note: each undeclared identifier is reported only once for each function it appears in
+arraylist.c:72:12: error: dereferencing ‘void *’ pointer [-Werror]
+   72 |     return *aux;
+      |            ^~~~
+arraylist.c:72:12: error: void value not ignored as it ought to be
+arraylist.c:73:1: error: control reaches end of non-void function [-Werror=return-type]
+   73 | }
+      | ^
+cc1: all warnings being treated as errors
+Compilation failed
+cc8d08b
