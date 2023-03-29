@@ -189,3 +189,15 @@ arraylist.c:73:1: error: control reaches end of non-void function [-Werror=retur
 cc1: all warnings being treated as errors
 Compilation failed
 cc8d08b
+Wed 29 Mar 2023 02:40:30 PM UTC: 
+ arraylist.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:
+arraylist.c: In function ‘pop’:
+arraylist.c:68:8: error: ‘auxIn’ undeclared (first use in this function); did you mean ‘aux’?
+   68 |   for (auxIn = i ; auxIn < l -> size ; auxIn++)
+      |        ^~~~~
+      |        aux
+arraylist.c:68:8: note: each undeclared identifier is reported only once for each function it appears in
+Compilation failed
+acc0493

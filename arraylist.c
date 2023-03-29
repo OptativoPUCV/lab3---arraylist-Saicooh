@@ -69,7 +69,7 @@ void *pop(ArrayList * l, int i)
   {
       l -> data[auxIn] = l -> data[auxIn+1];
   }
-    return *aux;
+    return aux;
 }
 
 void *get(ArrayList * l, int i)
