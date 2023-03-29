@@ -20,7 +20,7 @@ ArrayList *createList(void)
 
   lista -> data = malloc(2 * sizeof(void **));
   
-  lista -> capacity = 2;
+  lista -> capacity = 2, lista -> size = 0;
   
     return lista;
 }
