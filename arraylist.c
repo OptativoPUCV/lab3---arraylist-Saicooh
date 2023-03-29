@@ -4,10 +4,11 @@
 #include "arraylist.h"
 
 //normal array
-typedef struct ArrayList {
-    void **data;
-    int capacity;
-    int size;
+typedef struct ArrayList 
+{
+  void **data;
+  int capacity;
+  int size;
 } ArrayList;
 
 ArrayList *createList(void)
@@ -60,6 +61,7 @@ void push(ArrayList * l, void * data, int i)
 
 void *pop(ArrayList * l, int i)
 {
+  
     return NULL;
 }
 
