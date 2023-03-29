@@ -2,3 +2,9 @@ mi., 15 de feb. de 2023 12:35:23:
  tests:  0|6
 total_score: 0/70
 7964391
+Wed 29 Mar 2023 01:36:04 PM UTC: 
+ arraylist.c | 15 +++++++++++++--
+ 1 file changed, 13 insertions(+), 2 deletions(-)
+ tests:  1|5
+total_score: 10/70
+f3f0dd0
