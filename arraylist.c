@@ -69,6 +69,9 @@ void *pop(ArrayList * l, int i)
   {
       l -> data[auxIn] = l -> data[auxIn+1];
   }
+
+  l -> size--;
+  
     return aux;
 }
 
