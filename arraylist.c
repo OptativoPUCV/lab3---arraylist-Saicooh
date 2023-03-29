@@ -35,11 +35,26 @@ void append(ArrayList * l, void * data)
 
   l -> data[l -> size] = data;
 
-  l->size++;
+  l -> size++;
   
 }
 
-void push(ArrayList * l, void * data, int i){
+void push(ArrayList * l, void * data, int i)
+{
+  if (i > l -> size) return;
+
+  if (l -> size == l -> capacity)
+  {
+    l -> capacity *= 2;
+    l -> data = realloc(l -> data, l -> capacity * sizeof(void **));
+  }
+
+  for (int auxIn = l -> size ; auxIn > i ; auxIn--)
+  {
+    l -> data[auxIn] = l -> data[auxIn - 1];
+  }
+
+  
 
 }
 
@@ -60,5 +75,4 @@ void clean(ArrayList * l)
 {
   free(l);
   l = createList();
-    
 }
