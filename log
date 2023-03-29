@@ -146,3 +146,14 @@ Wed 29 Mar 2023 02:16:00 PM UTC:
  tests:  6|2
 total_score: 40/70
 e196b4a
+Wed 29 Mar 2023 02:27:03 PM UTC: 
+ arraylist.c | 11 +++++++++--
+ 1 file changed, 9 insertions(+), 2 deletions(-)
+In file included from test.c:5:
+arraylist.c: In function ‘get’:
+arraylist.c:71:12: error: statement with no effect [-Werror=unused-value]
+   71 |   l -> data[i];
+      |   ~~~~~~~~~^~~
+cc1: all warnings being treated as errors
+Compilation failed
+d0c0767
