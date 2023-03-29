@@ -31,3 +31,27 @@ arraylist.c:33:67: error: expected ‘;’ before ‘}’ token
       |   ~                                                                
 Compilation failed
 1a06984
+Wed 29 Mar 2023 01:55:22 PM UTC: 
+ arraylist.c | 5 ++++-
+ 1 file changed, 4 insertions(+), 1 deletion(-)
+In file included from test.c:5:
+arraylist.c: In function ‘append’:
+arraylist.c:33:66: error: expected ‘)’ before ‘;’ token
+   33 |     l -> data = realloc(l-> data, l -> capacity * sizeof(void **);
+      |                                                                  ^
+      |                                                                  )
+arraylist.c:33:67: error: expected ‘;’ before ‘}’ token
+   33 |     l -> data = realloc(l-> data, l -> capacity * sizeof(void **);
+      |                                                                   ^
+      |                                                                   ;
+   34 |   }
+      |   ~                                                                
+arraylist.c: In function ‘clean’:
+arraylist.c:60:7: error: too many arguments to function ‘createList’
+   60 |   l = createList(l);
+      |       ^~~~~~~~~~
+arraylist.c:13:12: note: declared here
+   13 | ArrayList *createList(void)
+      |            ^~~~~~~~~~
+Compilation failed
+1cf93c4
