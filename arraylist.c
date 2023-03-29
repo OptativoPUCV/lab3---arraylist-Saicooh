@@ -50,9 +50,7 @@ void push(ArrayList * l, void * data, int i)
   }
 
   for (int auxIn = l -> size ; auxIn > i ; auxIn--)
-  {
     l -> data[auxIn] = l -> data[auxIn - 1];
-  }
 
   l -> data[i] = data;
 
