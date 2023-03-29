@@ -99,3 +99,20 @@ arraylist.c:33:67: error: expected ‘;’ before ‘}’ token
       |   ~                                                                
 Compilation failed
 fd1d357
+Wed 29 Mar 2023 02:00:19 PM UTC: 
+ arraylist.c | 2 ++
+ 1 file changed, 2 insertions(+)
+In file included from test.c:5:
+arraylist.c: In function ‘append’:
+arraylist.c:33:66: error: expected ‘)’ before ‘;’ token
+   33 |     l -> data = realloc(l-> data, l -> capacity * sizeof(void **);
+      |                                                                  ^
+      |                                                                  )
+arraylist.c:33:67: error: expected ‘;’ before ‘}’ token
+   33 |     l -> data = realloc(l-> data, l -> capacity * sizeof(void **);
+      |                                                                   ^
+      |                                                                   ;
+   34 |   }
+      |   ~                                                                
+Compilation failed
+90ea033
